@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="" target="_blank">Yasser ibrahim/aerium/</a>
+  <a href="" target="_blank">Yasser ibrahim/</a>
 </h1>
 
 <p align="center">
