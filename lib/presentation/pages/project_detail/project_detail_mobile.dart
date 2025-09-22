@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/pages/portfolio/portfolio_page.dart';
-import 'package:aerium/presentation/widgets/app_drawer.dart';
-import 'package:aerium/presentation/widgets/content_wrapper.dart';
-import 'package:aerium/presentation/widgets/custom_app_bar.dart';
-import 'package:aerium/presentation/widgets/flicker_text_animation.dart';
-import 'package:aerium/presentation/widgets/project_cover.dart';
-import 'package:aerium/presentation/widgets/socials.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/presentation/widgets/void.dart';
-import 'package:aerium/values/values.dart';
+import 'package:Yasser/core/layout/adaptive.dart';
+import 'package:Yasser/core/utils/functions.dart';
+import 'package:Yasser/presentation/pages/portfolio/portfolio_page.dart';
+import 'package:Yasser/presentation/widgets/app_drawer.dart';
+import 'package:Yasser/presentation/widgets/content_wrapper.dart';
+import 'package:Yasser/presentation/widgets/custom_app_bar.dart';
+import 'package:Yasser/presentation/widgets/flicker_text_animation.dart';
+import 'package:Yasser/presentation/widgets/project_cover.dart';
+import 'package:Yasser/presentation/widgets/socials.dart';
+import 'package:Yasser/presentation/widgets/spaces.dart';
+import 'package:Yasser/presentation/widgets/void.dart';
+import 'package:Yasser/values/values.dart';
 
 class ProjectDetailMobile extends StatefulWidget {
   ProjectDetailMobile({

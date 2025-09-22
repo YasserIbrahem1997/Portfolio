@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:aerium/core/utils/functions.dart';
-import 'package:aerium/presentation/widgets/horizontal_bar.dart';
-import 'package:aerium/values/values.dart';
+import 'package:Yasser/core/utils/functions.dart';
+import 'package:Yasser/presentation/widgets/horizontal_bar.dart';
+import 'package:Yasser/values/values.dart';
 
 class Socials extends StatelessWidget {
   Socials({

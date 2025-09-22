@@ -246,8 +246,8 @@ class Data {
       webUrl: StringConst.BEQUIP_LOGISTICS_WEB_URL,
     ),
     PortfolioData(
-      title: StringConst.AERIUM,
-      subtitle: StringConst.AERIUM_SUBTITLE,
+      title: StringConst.YASSER,
+      subtitle: StringConst.YASSER_SUBTITLE,
       image: ImagePath.AERIUM,
       portfolioDescription: StringConst.AERIUM_DETAIL,
       imageSize: 0.3,
@@ -255,7 +255,7 @@ class Data {
       isLive: true,
       technologyUsed: StringConst.FLUTTER,
       gitHubUrl: StringConst.AERIUM_GITHUB_URL,
-      webUrl: StringConst.AERIUM_WEB_URL,
+      webUrl: StringConst.YASSER_WEB_URL,
     ),
     PortfolioData(
       title: StringConst.LEARN_UPP,

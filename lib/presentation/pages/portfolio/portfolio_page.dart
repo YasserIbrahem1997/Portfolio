@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/presentation/pages/portfolio/portfolio_page_desktop.dart';
-import 'package:aerium/presentation/pages/portfolio/portfolio_page_mobile.dart';
-import 'package:aerium/values/values.dart';
+import 'package:Yasser/presentation/pages/portfolio/portfolio_page_desktop.dart';
+import 'package:Yasser/presentation/pages/portfolio/portfolio_page_mobile.dart';
+import 'package:Yasser/values/values.dart';
 import 'package:responsive_builder/responsive_builder.dart';
 
 //TODO:: Add elevation and shadow to portfolio cards..

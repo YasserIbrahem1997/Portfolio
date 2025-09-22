@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:aerium/core/layout/adaptive.dart';
-import 'package:aerium/presentation/pages/about/about_page.dart';
-import 'package:aerium/presentation/pages/portfolio/portfolio_page.dart';
-import 'package:aerium/presentation/widgets/content_wrapper.dart';
-import 'package:aerium/presentation/widgets/flicker_text_animation.dart';
-import 'package:aerium/presentation/widgets/menu_list.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/presentation/widgets/sub_menu_list.dart';
-import 'package:aerium/presentation/widgets/trailing_info.dart';
-import 'package:aerium/values/values.dart';
+import 'package:Yasser/core/layout/adaptive.dart';
+import 'package:Yasser/presentation/pages/about/about_page.dart';
+import 'package:Yasser/presentation/pages/portfolio/portfolio_page.dart';
+import 'package:Yasser/presentation/widgets/content_wrapper.dart';
+import 'package:Yasser/presentation/widgets/flicker_text_animation.dart';
+import 'package:Yasser/presentation/widgets/menu_list.dart';
+import 'package:Yasser/presentation/widgets/spaces.dart';
+import 'package:Yasser/presentation/widgets/sub_menu_list.dart';
+import 'package:Yasser/presentation/widgets/trailing_info.dart';
+import 'package:Yasser/values/values.dart';
 
 class AboutPageDesktop extends StatefulWidget {
   @override

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/scheduler.dart';
-import 'package:aerium/presentation/widgets/horizontal_bar.dart';
-import 'package:aerium/presentation/widgets/spaces.dart';
-import 'package:aerium/values/values.dart';
+import 'package:Yasser/presentation/widgets/horizontal_bar.dart';
+import 'package:Yasser/presentation/widgets/spaces.dart';
+import 'package:Yasser/values/values.dart';
 
 import 'flicker_text_animation.dart';
 

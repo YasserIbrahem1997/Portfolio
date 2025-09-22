@@ -23,7 +23,7 @@ class StringConst {
   static const String VIEW = "View";
   static const String COMING_SOON = "COMING SOON !!";
   static const String BUILT_WITH = "Built with ";
-  static const String DEV_EMAIL = "davidcobbina47@gmail.com";
+  static const String DEV_EMAIL = "yasserelabasy1997@gmail.com";
   static const String EMAIL_URL = "mailto:<$DEV_EMAIL>?subject=&body=";
 
   static const String KEY_SKILLS = "KEY SKILLS";
@@ -40,7 +40,7 @@ class StringConst {
   static const String PUNCH_LINE = "I build things with flutter";
   static const String SPECIALITY = "FLUTTER DEV";
   static const String DESIGNED_IN = "Made in Alexandria with ";
-  static const String DESIGNED_BY = "Designed by Pavel G. ";
+  static const String DESIGNED_BY = "Designed by Yasser I. ";
   static const String BUILT_BY = "Built by Yasser Ibrahim ";
 
   static const String ABOUT_DEV_TEXT =
@@ -244,14 +244,14 @@ class StringConst {
       "B-equip is well established technical support company registered in Ghana. The company is well versed in CAT machine repairs, troubleshooting, component change out, mid-life service and more. This website was built to show their services and portfolio.";
   static const String BEQUIP_LOGISTICS_WEB_URL = "http://bequiplogisticsgh.com";
 
-  static const String AERIUM = "Aerium";
-  static const String AERIUM_SUBTITLE =
+  static const String YASSER = "Yasser";
+  static const String YASSER_SUBTITLE =
       "A progressive web app for showcasing your portfolio.";
   static const String AERIUM_DETAIL =
       "As you can tell, you're currently on Aerium right now. Aerium is an elegant progressive web app built to help developers tell their story by showcasing their works and skills.";
   static const String AERIUM_GITHUB_URL =
       "https://github.com/david-legend/aerium";
-  static const String AERIUM_WEB_URL = SITE_URL;
+  static const String YASSER_WEB_URL = SITE_URL;
 
   static const String LEARN_UPP = "LearnUpp";
   static const String LEARN_UPP_SUBTITLE = "A Learning app concept";
