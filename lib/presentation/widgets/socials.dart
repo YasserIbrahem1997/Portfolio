@@ -56,7 +56,7 @@ class Socials extends StatelessWidget {
                   margin: EdgeInsets.symmetric(vertical: Sizes.MARGIN_4),
                 ),
                 SocialButton(
-                  icon: FontAwesomeIcons.twitter,
+                  icon: FontAwesomeIcons.whatsapp,
                   alignment: alignment,
                   onPressed: () {
                     Functions.launchUrl(StringConst.TWITTER_URL);
@@ -110,7 +110,7 @@ class Socials extends StatelessWidget {
                   color: barColor,
                 ),
                 SocialButton(
-                  icon: FontAwesomeIcons.twitter,
+                  icon: FontAwesomeIcons.whatsapp,
                   alignment: alignment,
                   onPressed: () {
                     Functions.launchUrl(StringConst.TWITTER_URL);

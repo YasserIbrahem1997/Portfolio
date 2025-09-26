@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:Yasser/core/utils/functions.dart';
 import 'package:Yasser/values/values.dart';
 
+import '../pages/contact/contact_form_in_web.dart';
 import 'circular_container.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -72,7 +73,8 @@ class CustomAppBar extends StatelessWidget {
                       ),
                   onTap: onActionsPressed ??
                       () {
-                        Functions.launchUrl(StringConst.EMAIL_URL);
+                        ContactFormDialog.show(context);
+                        // Functions.launchUrl(StringConst.EMAIL_URL);
 //                        Navigator.pushNamed(
 //                          context,
 //                          ContactPage.contactPageRoute,

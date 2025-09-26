@@ -1,3 +1,4 @@
+import 'package:Yasser/presentation/pages/contact/contact_form_in_web.dart';
 import 'package:flutter/material.dart';
 import 'package:Yasser/core/utils/functions.dart';
 import 'package:Yasser/presentation/widgets/circular_container.dart';
@@ -48,7 +49,9 @@ class TrailingInfo extends StatelessWidget {
           InkWell(
             onTap: onLeadingWidgetPressed ??
                 () {
-                  Functions.launchUrl(StringConst.EMAIL_URL);
+                  ContactFormDialog.show(context);
+
+                  // Functions.launchUrl(StringConst.EMAIL_URL);
                 },
             child: leadingWidget ??
                 CircularContainer(

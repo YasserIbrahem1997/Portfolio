@@ -16,18 +16,18 @@ class FlickerTextAnimation extends StatefulWidget {
     this.wrapAlignment = WrapAlignment.start,
     this.fontSize = Sizes.TEXT_SIZE_18,
   })  : color = ColorTween(
-          begin: textColor,
-          end: fadeInColor,
-        ).animate(
-          CurvedAnimation(
-            parent: controller,
-            curve: Interval(
-              start == null ? 0.0 : start,
-              end == null ? 1.0 : end,
-              curve: Curves.easeIn,
-            ),
-          ),
-        ),
+    begin: textColor,
+    end: fadeInColor,
+  ).animate(
+    CurvedAnimation(
+      parent: controller,
+      curve: Interval(
+        start ?? 0.0,
+        end ?? 1.0,
+        curve: Curves.easeIn,
+      ),
+    ),
+  ),
         title = IntTween(
           begin: (Random().nextDouble() * pow(10, text.length)).toInt(),
           end: (Random().nextDouble() * pow(10, text.length)).toInt(),
@@ -35,8 +35,8 @@ class FlickerTextAnimation extends StatefulWidget {
           CurvedAnimation(
             parent: controller,
             curve: Interval(
-              start == null ? 0.0 : start,
-              end == null ? 1.0 : end,
+              start ?? 0.0,
+              end ?? 1.0,
               curve: Curves.easeIn,
             ),
           ),
@@ -62,27 +62,50 @@ class FlickerTextAnimation extends StatefulWidget {
 
 class _FlickerTextAnimationState extends State<FlickerTextAnimation> {
   bool isAnimating = false;
+  late VoidCallback _statusListener;
 
   @override
   void initState() {
-    widget.controller.addStatusListener((status) {
-      if (status == AnimationStatus.forward) {
-        WidgetsBinding.instance!.addPostFrameCallback((_) {
-          setState(() {
-            isAnimating = true;
-          });
-        });
-      }
-      if (status == AnimationStatus.completed) {
-        WidgetsBinding.instance!.addPostFrameCallback((_) {
-          setState(() {
-            isAnimating = false;
-          });
-        });
-      }
-    });
-
     super.initState();
+
+    // إنشاء الـ listener مرة واحدة
+    _statusListener = () {
+      _handleAnimationStatus(widget.controller.status);
+    };
+
+    // إضافة الـ listener
+    widget.controller.addStatusListener(_handleAnimationStatus);
+  }
+
+  void _handleAnimationStatus(AnimationStatus status) {
+    // التأكد من أن الـ widget لا يزال mounted
+    if (!mounted) return;
+
+    bool newAnimatingState = isAnimating;
+
+    if (status == AnimationStatus.forward) {
+      newAnimatingState = true;
+    } else if (status == AnimationStatus.completed) {
+      newAnimatingState = false;
+    }
+
+    // تحديث الحالة فقط إذا تغيرت
+    if (newAnimatingState != isAnimating) {
+      WidgetsBinding.instance?.addPostFrameCallback((_) {
+        if (mounted) { // تأكد مرة أخرى قبل setState
+          setState(() {
+            isAnimating = newAnimatingState;
+          });
+        }
+      });
+    }
+  }
+
+  @override
+  void dispose() {
+    // إزالة الـ listener قبل dispose
+    widget.controller.removeStatusListener(_handleAnimationStatus);
+    super.dispose();
   }
 
   Widget _buildAnimation(BuildContext context, Widget? child) {

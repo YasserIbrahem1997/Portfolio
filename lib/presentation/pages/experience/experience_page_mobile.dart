@@ -28,12 +28,14 @@ class ExperiencePageMobile extends StatelessWidget {
               }
             },
             bottom: TabBar(
+              isScrollable: true, // هذا السطر هو الحل السحري!
+
               tabs: _buildTabBar(Data.experienceData),
               indicatorColor: AppColors.complimentColor1,
               labelColor: AppColors.complimentColor1,
-              labelPadding: EdgeInsets.all(Sizes.PADDING_8),
+              labelPadding: EdgeInsets.all(Sizes.PADDING_12),
               labelStyle: theme.textTheme.titleLarge!.copyWith(
-                fontSize: Sizes.TEXT_SIZE_16,
+                fontSize: Sizes.TEXT_SIZE_14,
                 fontWeight: FontWeight.w600,
               ),
               unselectedLabelColor: AppColors.accentColor,

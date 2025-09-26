@@ -102,8 +102,8 @@ class ExperienceTree extends StatelessWidget {
           duration: experienceData[index].duration,
           width: widthOfTree,
           height: isDisplaySmallDesktop(context)
-              ? assignHeight(context: context, fraction: 0.45)
-              : assignHeight(context: context, fraction: 0.35),
+              ? assignHeight(context: context, fraction: 0.50)
+              : assignHeight(context: context, fraction: 0.40),
         ),
       );
     }
@@ -317,6 +317,8 @@ class RoleLeaf extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          SpaceH8(),
+          SpaceH8(),
           InkWell(
             onTap: onTap,
             child: Text(

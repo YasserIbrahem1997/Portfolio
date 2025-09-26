@@ -13,6 +13,8 @@ import 'package:Yasser/presentation/widgets/spaces.dart';
 import 'package:Yasser/presentation/widgets/trailing_info.dart';
 import 'package:Yasser/values/values.dart';
 
+import '../contact/contact_form_in_web.dart';
+
 class HomePageDesktop extends StatefulWidget {
   @override
   _HomePageDesktopState createState() => _HomePageDesktopState();
@@ -84,7 +86,8 @@ class _HomePageDesktopState extends State<HomePageDesktop> {
                       color: AppColors.secondaryColor,
                       child: TrailingInfo(
                         onLeadingWidgetPressed: () {
-                          Functions.launchUrl(StringConst.EMAIL_URL);
+                          ContactFormDialog.show(context);
+                          // Functions.launchUrl(StringConst.EMAIL_URL);
 //                          Navigator.pushNamed(
 //                            context,
 //                            ContactPage.contactPageRoute,
